@@ -9,10 +9,10 @@ const myPlaintextPassword = 'sUperpassw0rd!';
 const someOtherPlaintextPassword = 'pass123';
 const bcrypt = require('bcrypt');
 bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
-    /*Store hash in your db*/
+    console.log(hash);
   });
 bcrypt.compare(myPlaintextPassword, hash, (err, res) => {
-    /*res == true or false*/
+    console.loh(compare);
   });
 bcrypt.hash('passw0rd!', 13, (err, hash) => {
   console.log(hash);
